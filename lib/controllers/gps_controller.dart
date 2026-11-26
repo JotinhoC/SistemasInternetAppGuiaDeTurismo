@@ -16,6 +16,7 @@ class GpsController extends ChangeNotifier{
     buscarLocal();
   }
   Future<void> buscarLocal() async {
+    carregando = true;
     notifyListeners();
     try{
       atual = await _servico.obterLocal();

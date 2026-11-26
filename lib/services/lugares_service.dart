@@ -7,7 +7,7 @@ class LugaresService {
   //https://guiaturismo.onrender.com/lugares?pagina=1&limite=10
   String url = "https://guia.liliaborges.com.br/lugares";
   int pagina = 1;
-  int limite = 10;
+  int limite = 100;
 
   Future<List<LugaresModel>> buscarLugares() async {
     try {
